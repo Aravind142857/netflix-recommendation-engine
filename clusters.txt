@@ -1,0 +1,385 @@
+############
+show_id: s44
+type: Movie
+title: Jaws 3
+director: Joe Alves
+cast: Dennis Quaid, Bess Armstrong, Simon MacCorkindale, Louis Gossett Jr., John Putch, Lea Thompson, P.H. Moriarty, Dan Blasko, Liz Morris, Lisa Maurer
+country: United States
+date_added: September 16, 2021
+release_year: 1983
+rating: PG
+duration: 98 min
+listed_in: Action & Adventure, Horror Movies, Thrillers
+description: After the staff of a marine theme park try to capture a young great white shark, they discover its mother has invaded the enclosure and is out for blood.
+cluster: 0
+############
+############
+show_id: s54
+type: Movie
+title: InuYasha the Movie 4: Fire on the Mystic Island
+director: Toshiya Shinohara
+cast: Kappei Yamaguchi, Satsuki Yukino, Koji Tsujitani, Houko Kuwashima, Kumiko Watanabe, Noriko Hidaka, Ken Narita, Cho, Mamiko Noto, Nobutoshi Canna
+country: Japan
+date_added: September 15, 2021
+release_year: 2004
+rating: TV-PG
+duration: 88 min
+listed_in: Action & Adventure, Anime Features, International Movies
+description: Ai, a young half-demon who has escaped from Horai Island to try to help her people, returns with potential saviors InuYasha, Sesshomaru and Kikyo.
+cluster: 0
+############
+############
+show_id: s64
+type: Movie
+title: Naruto the Movie: Ninja Clash in the Land of Snow
+director: Tensai Okamura
+cast: Junko Takeuchi, Noriaki Sugiyama, Chie Nakamura, Kazuhiko Inoue, Yuhko Kaida, Tsutomu Isobe, Hirotaka Suzuoki, Jun Karasawa, Harii Kaneko, Ikuo Nishikawa
+country: Japan
+date_added: September 15, 2021
+release_year: 2004
+rating: TV-PG
+duration: 83 min
+listed_in: Action & Adventure, Anime Features, International Movies
+description: Naruto, Sasuke and Sakura learn they'll be protecting an actress from being hurt while making her next film, but it turns out she's a princess.
+cluster: 0
+############
+############
+show_id: s136
+type: Movie
+title: Cliffhanger
+director: Renny Harlin
+cast: Sylvester Stallone, John Lithgow, Michael Rooker, Janine Turner, Rex Linn, Caroline Goodall, Leon, Craig Fairbrass, Ralph Waite, Max Perlich, Paul Winfield
+country: United States, Italy, France, Japan
+date_added: September 1, 2021
+release_year: 1993
+rating: R
+duration: 113 min
+listed_in: Action & Adventure
+description: Ranger Gabe Walker and his partner are called to rescue a group of stranded climbers, only to learn the climbers are actually thieving hijackers.
+cluster: 0
+############
+############
+show_id: s138
+type: Movie
+title: Crocodile Dundee in Los Angeles
+director: Simon Wincer
+cast: Paul Hogan, Linda Kozlowski, Jere Burns, Jonathan Banks, Aida Turturro, Alec Wilson, Gerry Skilton, Steve Rackman, Serge Cockburn, Paul Rodriguez, Mark Adair-Rios, Tiriel Mora, Grant Piro, Mike Tyson
+country: Australia, United States
+date_added: September 1, 2021
+release_year: 2001
+rating: PG
+duration: 95 min
+listed_in: Action & Adventure, Comedies
+description: When Mick "Crocodile" Dundee and his family land in Los Angeles, they soon learn some lessons about American life in this comedy sequel.
+cluster: 0
+############
+
+
+############
+show_id: s1
+type: Movie
+title: Dick Johnson Is Dead
+director: Kirsten Johnson
+cast: nan
+country: United States
+date_added: September 25, 2021
+release_year: 2020
+rating: PG-13
+duration: 90 min
+listed_in: Documentaries
+description: As her father nears the end of his life, filmmaker Kirsten Johnson stages his death in inventive and comical ways to help them both face the inevitable.
+cluster: 1
+############
+############
+show_id: s2
+type: TV Show
+title: Blood & Water
+director: nan
+cast: Ama Qamata, Khosi Ngema, Gail Mabalane, Thabang Molaba, Dillon Windvogel, Natasha Thahane, Arno Greeff, Xolile Tshabalala, Getmore Sithole, Cindy Mahlangu, Ryle De Morny, Greteli Fincham, Sello Maake Ka-Ncube, Odwa Gwanya, Mekaila Mathys, Sandi Schultz, Duane Williams, Shamilla Miller, Patrick Mofokeng
+country: South Africa
+date_added: September 24, 2021
+release_year: 2021
+rating: TV-MA
+duration: 2 Seasons
+listed_in: International TV Shows, TV Dramas, TV Mysteries
+description: After crossing paths at a party, a Cape Town teen sets out to prove whether a private-school swimming star is her sister who was abducted at birth.
+cluster: 1
+############
+############
+show_id: s4
+type: TV Show
+title: Jailbirds New Orleans
+director: nan
+cast: nan
+country: United States
+date_added: September 24, 2021
+release_year: 2021
+rating: TV-MA
+duration: 1 Season
+listed_in: Docuseries, Reality TV
+description: Feuds, flirtations and toilet talk go down among the incarcerated women at the Orleans Justice Center in New Orleans on this gritty reality series.
+cluster: 1
+############
+############
+show_id: s7
+type: Movie
+title: My Little Pony: A New Generation
+director: Robert Cullen, José Luis Ucha
+cast: Vanessa Hudgens, Kimiko Glenn, James Marsden, Sofia Carson, Liza Koshy, Ken Jeong, Elizabeth Perkins, Jane Krakowski, Michael McKean, Phil LaMarr
+country: United States
+date_added: September 24, 2021
+release_year: 2021
+rating: PG
+duration: 91 min
+listed_in: Children & Family Movies
+description: Equestria's divided. But a bright-eyed hero believes Earth Ponies, Pegasi and Unicorns should be pals — and, hoof to heart, she’s determined to prove it.
+cluster: 1
+############
+############
+show_id: s8
+type: Movie
+title: Sankofa
+director: Haile Gerima
+cast: Kofi Ghanaba, Oyafunmike Ogunlano, Alexandra Duah, Nick Medley, Mutabaruka, Afemo Omilami, Reggie Carter, Mzuri
+country: United States, Ghana, Burkina Faso, United Kingdom, Germany, Ethiopia
+date_added: September 24, 2021
+release_year: 1993
+rating: TV-MA
+duration: 125 min
+listed_in: Dramas, Independent Movies, International Movies
+description: On a photo shoot in Ghana, an American model slips back in time, becomes enslaved on a plantation and bears witness to the agony of her ancestral past.
+cluster: 1
+############
+
+
+############
+show_id: s6
+type: TV Show
+title: Midnight Mass
+director: Mike Flanagan
+cast: Kate Siegel, Zach Gilford, Hamish Linklater, Henry Thomas, Kristin Lehman, Samantha Sloyan, Igby Rigney, Rahul Kohli, Annarah Cymone, Annabeth Gish, Alex Essoe, Rahul Abburi, Matt Biedel, Michael Trucco, Crystal Balint, Louis Oliver
+country: United States
+date_added: September 24, 2021
+release_year: 2021
+rating: TV-MA
+duration: 1 Season
+listed_in: TV Dramas, TV Horror, TV Mysteries
+description: The arrival of a charismatic young priest brings glorious miracles, ominous mysteries and renewed religious fervor to a dying town desperate to believe.
+cluster: 2
+############
+############
+show_id: s10
+type: Movie
+title: The Starling
+director: Theodore Melfi
+cast: Melissa McCarthy, Chris O'Dowd, Kevin Kline, Timothy Olyphant, Daveed Diggs, Skyler Gisondo, Laura Harrier, Rosalind Chao, Kimberly Quinn, Loretta Devine, Ravi Kapoor
+country: United States
+date_added: September 24, 2021
+release_year: 2021
+rating: PG-13
+duration: 104 min
+listed_in: Comedies, Dramas
+description: A woman adjusting to life after a loss contends with a feisty bird that's taken over her garden — and a husband who's struggling to find a way forward.
+cluster: 2
+############
+############
+show_id: s12
+type: TV Show
+title: Bangkok Breaking
+director: Kongkiat Komesiri
+cast: Sukollawat Kanarot, Sushar Manaying, Pavarit Mongkolpisit, Sahajak Boonthanakit, Suthipongse Thatphithakkul, Bhasaworn Bawronkirati, Daweerit Chullasapya, Waratthaya Wongchayaporn, Kittiphoom Wongpentak, Abhicha Thanachanun, Nophand Boonyai, Kittipong Khamsat, Arisara Wongchalee, Jaytiya Naiwattanakul, Pantipa Arunwattanachai, Panupan Jantanawong, Kungtap Saelim, Phumphat Chartsuriyakiat, Issara Veranitinunt, Keerati Sivakuae, Panjai Sirisuwan, Supranee Charoenpol, Suda Chuenban, Visaka Banhansupavat, Pitchatorn Santinatornkul
+country: United States
+date_added: September 23, 2021
+release_year: 2021
+rating: TV-MA
+duration: 1 Season
+listed_in: Crime TV Shows, International TV Shows, TV Action & Adventure
+description: Struggling to earn a living in Bangkok, a man joins an emergency rescue service and realizes he must unravel a citywide conspiracy.
+cluster: 2
+############
+############
+show_id: s13
+type: Movie
+title: Je Suis Karl
+director: Christian Schwochow
+cast: Luna Wedler, Jannis Niewöhner, Milan Peschel, Edin Hasanović, Anna Fialová, Marlon Boess, Victor Boccard, Fleur Geffrier, Aziz Dyab, Mélanie Fouché, Elizaveta Maximová
+country: Germany, Czech Republic
+date_added: September 23, 2021
+release_year: 2021
+rating: TV-MA
+duration: 127 min
+listed_in: Dramas, International Movies
+description: After most of her family is murdered in a terrorist bombing, a young woman is unknowingly lured into joining the very group that killed them.
+cluster: 2
+############
+############
+show_id: s25
+type: Movie
+title: Jeans
+director: S. Shankar
+cast: Prashanth, Aishwarya Rai Bachchan, Sri Lakshmi, Nassar
+country: India
+date_added: September 21, 2021
+release_year: 1998
+rating: TV-14
+duration: 166 min
+listed_in: Comedies, International Movies, Romantic Movies
+description: When the father of the man she loves insists that his twin sons marry twin sisters, a woman creates an alter ego that might be a bit too convincing.
+cluster: 2
+############
+
+
+############
+show_id: s3
+type: TV Show
+title: Ganglands
+director: Julien Leclercq
+cast: Sami Bouajila, Tracy Gotoas, Samuel Jouy, Nabiha Akkari, Sofia Lesaffre, Salim Kechiouche, Noureddine Farihi, Geert Van Rampelberg, Bakary Diombera
+country: United States
+date_added: September 24, 2021
+release_year: 2021
+rating: TV-MA
+duration: 1 Season
+listed_in: Crime TV Shows, International TV Shows, TV Action & Adventure
+description: To protect his family from a powerful drug lord, skilled thief Mehdi and his expert team of robbers are pulled into a violent and deadly turf war.
+cluster: 3
+############
+############
+show_id: s5
+type: TV Show
+title: Kota Factory
+director: nan
+cast: Mayur More, Jitendra Kumar, Ranjan Raj, Alam Khan, Ahsaas Channa, Revathi Pillai, Urvi Singh, Arun Kumar
+country: India
+date_added: September 24, 2021
+release_year: 2021
+rating: TV-MA
+duration: 2 Seasons
+listed_in: International TV Shows, Romantic TV Shows, TV Comedies
+description: In a city of coaching centers known to train India’s finest collegiate minds, an earnest but unexceptional student and his friends navigate campus life.
+cluster: 3
+############
+############
+show_id: s35
+type: TV Show
+title: Tayo and Little Wizards
+director: nan
+cast: Dami Lee, Jason Lee, Bommie Catherine Han, Jennifer Waescher, Nancy Kim
+country: United States
+date_added: September 17, 2021
+release_year: 2020
+rating: TV-Y7
+duration: 1 Season
+listed_in: Kids' TV
+description: Tayo speeds into an adventure when his friends get kidnapped by evil magicians invading their city in search of a magical gemstone.
+cluster: 3
+############
+############
+show_id: s38
+type: TV Show
+title: Angry Birds
+director: nan
+cast: Antti Pääkkönen, Heljä Heikkinen, Lynne Guaglione, Pasi Ruohonen, Rauno Ahonen
+country: Finland
+date_added: September 16, 2021
+release_year: 2018
+rating: TV-Y7
+duration: 1 Season
+listed_in: Kids' TV, TV Comedies
+description: Birds Red, Chuck and their feathered friends have lots of adventures while guarding eggs in their nest that pesky pigs keep trying to steal.
+cluster: 3
+############
+############
+show_id: s40
+type: TV Show
+title: Chhota Bheem
+director: nan
+cast: Vatsal Dubey, Julie Tejwani, Rupa Bhimani, Jigna Bhardwaj, Rajesh Kava, Mousam, Swapnil
+country: India
+date_added: September 16, 2021
+release_year: 2021
+rating: TV-Y7
+duration: 3 Seasons
+listed_in: Kids' TV
+description: A brave, energetic little boy with superhuman powers leads his friends on exciting adventures to guard their fellow Dholakpur villagers from evil.
+cluster: 3
+############
+
+
+############
+show_id: s69
+type: Movie
+title: Schumacher
+director: Hanns-Bruno Kammertöns, Vanessa Nöcker, Michael Wech
+cast: Michael Schumacher
+country: United States
+date_added: September 15, 2021
+release_year: 2021
+rating: TV-14
+duration: 113 min
+listed_in: Documentaries, International Movies, Sports Movies
+description: Through exclusive interviews and archival footage, this documentary traces an intimate portrait of seven-time Formula 1 champion Michael Schumacher.
+cluster: 4
+############
+############
+show_id: s92
+type: Movie
+title: The Women and the Murderer
+director: Mona Achache, Patricia Tourancheau
+cast: nan
+country: France
+date_added: September 9, 2021
+release_year: 2021
+rating: TV-14
+duration: 92 min
+listed_in: Documentaries, International Movies
+description: This documentary traces the capture of serial killer Guy Georges through the tireless work of two women: a police chief and a victim's mother.
+cluster: 4
+############
+############
+show_id: s97
+type: Movie
+title: If I Leave Here Tomorrow: A Film About Lynyrd Skynyrd
+director: Stephen Kijak
+cast: Ronnie Van Zandt, Gary Rossington, Allen Collins, Leon Wilkeson, Bob Burns, Billy Powell, Ed King, Artimus Pyle, Steve Gaines, Johnny Van Zant
+country: United States
+date_added: September 7, 2021
+release_year: 2018
+rating: TV-MA
+duration: 97 min
+listed_in: Documentaries, Music & Musicals
+description: Using interviews and archival footage, this documentary charts the story of the legendary Southern rockers with a focus on front man Ronnie Van Zant.
+cluster: 4
+############
+############
+show_id: s118
+type: Movie
+title: Final Account
+director: Luke Holland
+cast: nan
+country: United Kingdom, United States
+date_added: September 2, 2021
+release_year: 2021
+rating: PG-13
+duration: 94 min
+listed_in: Documentaries
+description: This documentary stitches together never-before-seen interviews with the last living generation of people who participated in Hitler's Third Reich.
+cluster: 4
+############
+############
+show_id: s231
+type: Movie
+title: The River Runner
+director: Rush Sturges
+cast: nan
+country: United States
+date_added: August 25, 2021
+release_year: 2021
+rating: TV-MA
+duration: 86 min
+listed_in: Documentaries, Sports Movies
+description: In this documentary, a kayaker sets out to become the first man to paddle the four great rivers that flow from Tibet's sacred Mount Kailash.
+cluster: 4
+############
+
+

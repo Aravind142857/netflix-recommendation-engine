@@ -1,0 +1,160 @@
+show_id: s3867
+type: Movie
+title: The Last Summer
+director: William Bindley
+cast: K.J. Apa, Maia Mitchell, Tyler Posey, Jacob Latimore, Halston Sage, Wolfgang Novogratz, Sosie Bacon, Jacob McCarthy, Mario Revolori, Gage Golightly, Audrey Grace Marshall
+country: United States
+date_added: May 3, 2019
+release_year: 2019
+rating: TV-14
+duration: 110 min
+listed_in: Comedies, Romantic Movies
+description: Teens from a Chicago high school grapple with their dreams, relationships and identities in a transformative summer before they leave for college.
+filtered_description: Teens from Chicago high school grapple with their dreams, relationships identities transformative summer before they leave college.
+cluster: 3
+similarity: 0.09022981890488545
+
+show_id: s4387
+type: Movie
+title: The Princess Switch
+director: nan
+cast: Vanessa Hudgens, Sam Palladio, Nick Sagar, Suanne Braun, Mark Fleischmann, Amy Griffiths, Sara Stewart, Pavel Douglas, Robin Soans, Calliope Taylor, Natali Yura, Alexa Adeosun
+country: United States
+date_added: November 16, 2018
+release_year: 2018
+rating: TV-G
+duration: 102 min
+listed_in: Children & Family Movies, Dramas, Romantic Movies
+description: When a down-to-earth Chicago baker and a soon-to-be princess discover they look like twins, they hatch a Christmastime plan to trade places.
+filtered_description: When down-to-earth Chicago baker soon-to-be princess discover they look like twins, they hatch Christmastime plan trade places.
+cluster: 3
+similarity: 0.08835888547857573
+
+show_id: s6164
+type: Movie
+title: Angel Eyes
+director: Luis Mandoki
+cast: Jennifer Lopez, Jim Caviezel, Sonia Braga, Terrence Howard, Jeremy Sisto, Monet Mazur, Victor Argo, Shirley Knight
+country: United States
+date_added: September 5, 2020
+release_year: 2001
+rating: R
+duration: 103 min
+listed_in: Dramas, Romantic Movies
+description: When a violent assault leaves her vulnerable, a streetwise Chicago cop receives help from a haunted loner who's struggling with traumas of his own.
+filtered_description: When violent assault leaves vulnerable, streetwise Chicago receives help from haunted loner who's struggling with traumas own.
+cluster: 3
+similarity: 0.0877863791527731
+
+show_id: s6322
+type: Movie
+title: Black & Privileged: Volume 1
+director: Mark Harris
+cast: Dawnisha Halfkenny, Simeon Henderson, Corey Hendrix, Malcom Banks, Nadia Simms, Brian White, Brely Evans, Cynda Williams, Carl Anthony Payne II
+country: United States
+date_added: July 12, 2019
+release_year: 2019
+rating: TV-MA
+duration: 79 min
+listed_in: Dramas
+description: When low-income families move into a thriving black community in Chicago, they find themselves at odds with politicians to maintain their status.
+filtered_description: When low-income families move into thriving black community Chicago, they find themselves odds with politicians maintain their status.
+cluster: 3
+similarity: 0.08771615397470055
+
+show_id: s2204
+type: TV Show
+title: Shameless (U.S.)
+director: nan
+cast: William H. Macy, Emmy Rossum, Justin Chatwin, Cameron Monaghan, Jeremy Allen White, Shanola Hampton, Steve Howey, Ethan Cutkosky, Emma Kenney, Laura Wiggins, Joan Cusack
+country: United States
+date_added: July 26, 2020
+release_year: 2019
+rating: TV-MA
+duration: 10 Seasons
+listed_in: TV Comedies, TV Dramas
+description: This dramedy based on a British series centers on siblings in a dysfunctional Chicago family who struggle while coping with their alcoholic father.
+filtered_description: This dramedy based British series centers siblings dysfunctional Chicago family struggle while coping with their alcoholic father.
+cluster: 2
+similarity: 0.08673178243920288
+
+show_id: s8530
+type: Movie
+title: The Tiger Hunter
+director: Lena Khan
+cast: Danny Pudi, Jon Heder, Rizwan Manji, Karen David, Iqbal Theba, Sam Page, Kevin Pollak, Parvesh Cheena, Michael McMillian
+country: United States
+date_added: April 9, 2018
+release_year: 2016
+rating: TV-14
+duration: 94 min
+listed_in: Comedies, Dramas, Independent Movies
+description: It's 1979, and engineer Sami is excited to leave his Indian village for a job in Chicago. But he soon runs into problems achieving his American dream.
+filtered_description: It's , engineer Sami excited leave Indian village Chicago. soon runs into problems achieving American dream.
+cluster: 3
+similarity: 0.08573905461863694
+
+show_id: s7797
+type: Movie
+title: Princess Cyd
+director: Stephen Cone
+cast: Tyler Ross, Rebecca Spence, James Vincent Meredith
+country: United States
+date_added: February 5, 2018
+release_year: 2017
+rating: TV-MA
+duration: 97 min
+listed_in: Dramas, Independent Movies, LGBTQ Movies
+description: A teenager moves to Chicago for the summer and finds a poignant mentor in her aunt and a sweet love interest in a girl who works in the neighborhood.
+filtered_description: teenager moves Chicago summer finds poignant mentor aunt sweet love interest girl works neighborhood.
+cluster: 3
+similarity: 0.08434459208051122
+
+show_id: s4646
+type: TV Show
+title: Life
+director: nan
+cast: Lee Dong-wook, Cho Seung-woo, Won Jin-ah, Lee Kyu-hyung, Moon Sung-keun, Yoo Jae-myung, Moon So-ri, Chun Ho-jin
+country: South Korea
+date_added: September 12, 2018
+release_year: 2018
+rating: TV-MA
+duration: 1 Season
+listed_in: International TV Shows, Korean TV Shows, TV Dramas
+description: At Korea's top university medical center, ideals and interests collide between a patient-centered ER doctor and the hospital's newly-appointed CEO.
+filtered_description: Korea's university medical center, ideals interests collide between patient-centered doctor hospital's newly-appointed CEO.
+cluster: 3
+similarity: 0.08283108235076406
+
+show_id: s7139
+type: Movie
+title: John Mellencamp: Plain Spoken
+director: nan
+cast: John Mellencamp
+country: United States
+date_added: February 1, 2018
+release_year: 2017
+rating: TV-MA
+duration: 80 min
+listed_in: Documentaries, Music & Musicals
+description: Iconic rocker John Mellencamp lights up Chicago in an electrifying live performance featuring old classics and new tracks.
+filtered_description: Iconic rocker John Mellencamp lights Chicago electrifying live performance featuring classics tracks.
+cluster: 1
+similarity: 0.08282525852278994
+
+show_id: s681
+type: TV Show
+title: The Last Dance
+director: nan
+cast: Michael Jordan, Scottie Pippen, Dennis Rodman
+country: United States
+date_added: June 19, 2021
+release_year: 2020
+rating: TV-MA
+duration: 1 Season
+listed_in: Docuseries
+description: This docuseries gives a definitive account of Michael Jordan’s career and the 1990s Chicago Bulls, packed with unaired footage from the 1997-98 season.
+filtered_description: This docuseries gives definitive account Michael Jordan’s career s Chicago Bulls, packed with unaired footage from - season.
+cluster: 3
+similarity: 0.082530088511471
+
