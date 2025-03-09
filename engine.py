@@ -6,6 +6,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.cluster import KMeans
 from sklearn.cluster import DBSCAN
+import numpy as np
 pd.set_option('display.max_columns', None)
 pd.set_option('display.max_rows', None)
 pd.set_option('display.width', None)
@@ -60,7 +61,19 @@ model = SentenceTransformer('all-MiniLM-L6-v2')
 
 sentence_embeddings = model.encode(df['filtered_description'].to_list())
 cosine_ST = cosine_similarity(sentence_embeddings, sentence_embeddings)
-def get_fuzzy_recommendations(title: str, cosine_sim=cosine_ST):
+
+def get_similar_genre(title: str, num_titles: int = 10, cosine_sim=cosine_ST):
+    idx = df.index[df['title'] == title].tolist()[0]
+    sim_scores = list(enumerate(cosine_sim[idx]))
+    genres=  df.iloc[idx]['listed_in'].split(', ')
+    similar_indices = [i[0] for i in sim_scores if i[1] > 0.5 or len(set(genres) - set(df.iloc[i[0]]['listed_in'].split(', '))) == len(set(genres))]
+    mask = np.ones(len(df), dtype=bool)
+    mask[similar_indices] = False
+    similar_genre = df[mask]['description'].sample(n=num_titles, random_state=42).tolist()
+    
+    return similar_genre
+
+def get_fuzzy_description_recommendations(title: str, cosine_sim=cosine_ST):
     idx = df.index[df['title'] == title].tolist()[0]
     sim_scores = list(enumerate(cosine_sim[idx]))
     sim_scores = sorted(sim_scores, key=lambda x: x[1], reverse=True)
@@ -75,15 +88,21 @@ def get_fuzzy_recommendations(title: str, cosine_sim=cosine_ST):
     # Fuzzy matching to sort titles
     sorted_pairs = sorted(title_description_pairs.keys(), key=lambda x: process.extractOne(x, title_description_pairs.keys())[1], reverse=True)
     with open('sentence-transformers.txt', 'w') as f:
+      f.write("Similar theme or plot")
       for desc in sorted_pairs:
         f.write(f"{title_description_pairs[desc]}: {desc}\n\n")
+      f.write("\n######\n\n")
+      f.write("Similar genre\n")
+      for desc in get_similar_genre(title):
+        f.write(f"{desc}\n\n")
+      f.write("\n######\n\n")
     return sorted_pairs
 
 ### K Means clustering
-num_clusters = 5
-km = KMeans(n_clusters=num_clusters, random_state=42)
-km.fit(tfidf_matrix)
-df['cluster'] = km.labels_
+# num_clusters = 5
+# km = KMeans(n_clusters=num_clusters, random_state=42)
+# km.fit(tfidf_matrix)
+# df['cluster'] = km.labels_
 ###
 ### DBSCAN clustering
 # dbscan = DBSCAN(eps=0.5, min_samples=5, metric='cosine')
@@ -103,33 +122,45 @@ df['cluster'] = km.labels_
 #          f.write(f"############\n{format_row(show)}############\n")
 #       f.write("\n\n")
                      
-cosine_sim = cosine_similarity(tfidf_matrix, tfidf_matrix)
+# cosine_sim = cosine_similarity(tfidf_matrix, tfidf_matrix)
 
 
     
-def get_recommendations(id:str=None, title:str=None, cosine_sim=cosine_sim):
-  if id:
-      idx = df.index[df['show_id'] == id].tolist()[0]
-  elif title:
-      idx = df.index[df['title'] == title].tolist()[0]
-  else:
-      return None
-  print(f"idx: {idx}, description: {df.iloc[idx]['description']}, listed_in: {df.iloc[idx]['listed_in']}")
-  sim_scores = list(enumerate(cosine_sim[idx]))
-  sim_scores = sorted(sim_scores, key=lambda x: x[1], reverse=True)
-  sim_scores = sim_scores[1:11]
-  movie_indices = [i[0] for i in sim_scores]
-  res = ""
-  for i in movie_indices:
-    res += format_row(i)
-    res += f"similarity: {cosine_sim[idx][i]}\n\n"
-  with open('output.txt', 'w') as f:
-    f.write(res)
-  return df['title'].iloc[movie_indices]
+# def get_recommendations(id:str=None, title:str=None, cosine_sim=cosine_sim):
+#   if id:
+#       idx = df.index[df['show_id'] == id].tolist()[0]
+#   elif title:
+#       idx = df.index[df['title'] == title].tolist()[0]
+#   else:
+#       return None
+#   print(f"idx: {idx}, description: {df.iloc[idx]['description']}, listed_in: {df.iloc[idx]['listed_in']}")
+#   sim_scores = list(enumerate(cosine_sim[idx]))
+#   sim_scores = sorted(sim_scores, key=lambda x: x[1], reverse=True)
+#   sim_scores = sim_scores[1:11]
+#   movie_indices = [i[0] for i in sim_scores]
+#   res = ""
+#   for i in movie_indices:
+#     res += format_row(i)
+#     res += f"similarity: {cosine_sim[idx][i]}\n\n"
+#   with open('output.txt', 'w') as f:
+#     f.write(res)
+#   return df['title'].iloc[movie_indices]
 
-get_recommendations(title='Chicago Med')
-get_fuzzy_recommendations(title='Chicago Med')
+# get_recommendations(title='Chicago Med')
+# get_fuzzy_description_recommendations(title='Chicago Med')
 # show_id type title director cast country date_added release_year rating duration listed_in description
 
 # Perhaps use a model to obtain context of plot: Medical, sports, etc.
 # Filter to make sure same genre
+def get_maturity_rating(title: str):
+  idx = df.index[df['title'] == title].tolist()[0]
+  return df.iloc[idx]['rating']
+
+if __name__ == "__main__":
+  title="Chicago Med"
+  get_fuzzy_description_recommendations(title=title)
+  # get_fuzzy_genre_recommendations
+  # get_fuzzy_maturity_recommendations
+  # get_fuzzy_cast_recommendations
+  # get_fuzzy_director_recommendations
+  # return a mix of them
