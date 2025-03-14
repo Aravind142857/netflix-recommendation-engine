@@ -12,7 +12,7 @@ pd.set_option('display.max_rows', None)
 pd.set_option('display.width', None)
 pd.set_option('display.max_colwidth', None)
 file_path = "netflix_titles.csv"
-print("File path:", file_path)
+# print("File path:", file_path)
 
 df = pd.read_csv(file_path, sep=',', header=0, index_col=None, usecols=None, dtype=None, na_values=['', 'NA'], parse_dates=['date_added'])
 # df['year_added'] = pd.to_datetime(df['date_added'].apply(lambda x: x.strip() if isinstance(x, str) else x), format="%B %d, %Y").dt.year # Extract year from date_added
@@ -20,13 +20,13 @@ df['country'] = df['country'].fillna('United States') # Set United States as the
 df = df.dropna(subset=['rating', 'description', 'duration']) # Remove columns where rating, description, or duration is null
 df ['release_year'] = df['release_year'].astype(int) # Convert release_year to int
 df['filtered_description'] = df['description'].apply(lambda x: re.sub(r'\d+', '', ' '.join([word for word in x.split() if len(word) > 3]))) # Filter out words with length less than 2
-print(f"Shape: {df.shape}")
-print(f"Columns: {df.columns}")
-print(f"Data types: {list(df['country'].unique())}")
-print(f"Null value summary: {df.isnull().sum()}")
-print(f"Unique genres: {df['listed_in'].unique()}")
+# print(f"Shape: {df.shape}")
+# print(f"Columns: {df.columns}")
+# print(f"Data types: {list(df['country'].unique())}")
+# print(f"Null value summary: {df.isnull().sum()}")
+# print(f"Unique genres: {df['listed_in'].unique()}")
 # print(f"Unique release years: {df['year_added'].unique()}")
-print("\n\n\n")
+# print("\n\n\n")
 dramas:pd.DataFrame = df[df['listed_in'].str.contains('Dramas', case=False, na=False)]
 # print(f"{dramas[dramas['description'].str.contains('medical|hospital', case=False, na=False)]['description']} \n###\n###\n")
 def format_row(idx):
@@ -69,9 +69,39 @@ def get_similar_genre(title: str, num_titles: int = 10, cosine_sim=cosine_ST):
     similar_indices = [i[0] for i in sim_scores if i[1] > 0.5 or len(set(genres) - set(df.iloc[i[0]]['listed_in'].split(', '))) == len(set(genres))]
     mask = np.ones(len(df), dtype=bool)
     mask[similar_indices] = False
-    similar_genre = df[mask]['description'].sample(n=num_titles, random_state=42).tolist()
-    
-    return similar_genre
+    return df[mask].sample(n=num_titles, random_state=42).index.tolist()
+
+def get_same_director_or_cast_recommendations(title: str):
+    idx = df.index[df['title'] == title].tolist()[0]
+    director = df.iloc[idx]['director']
+    cast = df.iloc[idx]['cast'].split(", ") if not pd.isna(df.iloc[idx]['cast']) else []
+    if cast == []:
+      return []
+    print("cast: ", cast)
+    similarity_scores = {}
+    for i, row in df.iterrows():
+      if row['title'] == title:
+        continue
+      if pd.isna(row["cast"]):
+        continue
+      other_cast = row["cast"].split(", ")
+      score = 0.0
+      for j, member in enumerate(cast):
+        if member in other_cast:
+          other_cast_index = other_cast.index(member)
+          if j < 2 and other_cast_index < 2:
+            score += 0.4
+          elif j < 2 or other_cast_index < 2:
+            score += 0.2
+          else:
+            score += 0.1
+      if score > 0:
+        similarity_scores[i] = score
+    sorted_recommendations = sorted(similarity_scores.items(), key=lambda x: x[1], reverse=True)[:10]
+    director_cast = [i for i, _ in sorted_recommendations]
+    # director_cast = df[(df['director'] == director) | (df['cast'].str.contains(cast, case=False, na=False))]['description'].sample(n=10, random_state=42).tolist()
+    return director_cast
+
 
 def get_fuzzy_description_recommendations(title: str, cosine_sim=cosine_ST):
     idx = df.index[df['title'] == title].tolist()[0]
@@ -80,24 +110,24 @@ def get_fuzzy_description_recommendations(title: str, cosine_sim=cosine_ST):
     
     # Get the top 10 highest values
     top_10_indices = [i[0] for i in sim_scores[1:11]]  # Exclude the first one as it's the title itself
-    top_10_rows = df.iloc[top_10_indices][['title', 'description']]
-    # Change to obtain name, description
-    print(top_10_rows)
-    # top_10_descriptions = df['description'].iloc[top_10_indices].tolist()
-    title_description_pairs = top_10_rows.set_index('description')['title'].to_dict()
-    # Fuzzy matching to sort titles
-    sorted_pairs = sorted(title_description_pairs.keys(), key=lambda x: process.extractOne(x, title_description_pairs.keys())[1], reverse=True)
+    sorted_indices = sorted(top_10_indices, key=lambda x: process.extractOne(df.iloc[x]['description'], [df.iloc[i]['description'] for i in top_10_indices])[1], reverse=True)
     with open('sentence-transformers.txt', 'w') as f:
-      f.write("Similar theme or plot")
-      for desc in sorted_pairs:
-        f.write(f"{title_description_pairs[desc]}: {desc}\n\n")
+      f.write("Similar theme or plot\n")
+      for idx in sorted_indices:
+        f.write(f"{get_title_desc(idx)}\n\n")
       f.write("\n######\n\n")
       f.write("Similar genre\n")
-      for desc in get_similar_genre(title):
-        f.write(f"{desc}\n\n")
+      for i in get_similar_genre(title):
+        f.write(f"{get_title_desc(i)}\n\n")
       f.write("\n######\n\n")
-    return sorted_pairs
+      f.write("Similar director or cast\n")
+      for i in get_same_director_or_cast_recommendations(title):
+        f.write(f"{get_title_desc(i)}\n\n")
+      f.write("\n######\n\n")
+    return
 
+def get_title_desc(i: int):
+  return f"Title: {df.iloc[i]['title']}\nDescription: {df.iloc[i]['description']}"
 ### K Means clustering
 # num_clusters = 5
 # km = KMeans(n_clusters=num_clusters, random_state=42)
@@ -157,10 +187,9 @@ def get_maturity_rating(title: str):
   return df.iloc[idx]['rating']
 
 if __name__ == "__main__":
-  title="Chicago Med"
+  # title="Chicago Med"
+  title = "2012"
   get_fuzzy_description_recommendations(title=title)
-  # get_fuzzy_genre_recommendations
   # get_fuzzy_maturity_recommendations
-  # get_fuzzy_cast_recommendations
   # get_fuzzy_director_recommendations
   # return a mix of them
